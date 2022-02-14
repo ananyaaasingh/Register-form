@@ -147,8 +147,8 @@ function myFunction()
    }
 
    function editdata(){
-     let data = document.getElementById('table-content');
 
+    
    }
    
 
