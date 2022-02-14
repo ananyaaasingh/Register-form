@@ -10,8 +10,6 @@ function check()
     localStorage.setItem("password", password);
 
     makerequest();
-    
-    
   }
 
 
@@ -61,9 +59,9 @@ function check()
 
 function requestt()
 {
-  var y = document.getElementById("div2");
-  var x = document.getElementById("div1");
-  var z = document.getElementById("div3");
+  let y = document.getElementById("div2");
+  let x = document.getElementById("div1");
+  let z = document.getElementById("div3");
 
   x.style.display="none";
   y.style.display="none";
@@ -86,10 +84,6 @@ function requestt()
   .catch((err) => {
     console.log(err);
   });
-
-
-
-
  
 }
 
@@ -98,24 +92,36 @@ function requestt()
 function myFunction() 
 
   {
-    var y = document.getElementById("div2");
-    var x = document.getElementById("div1");
+    let y = document.getElementById("div2");
+    let x = document.getElementById("div1");
+    let z = document.getElementById("div3");
+
 
     x.style.display="none";
     y.style.display="block";
+    z.style.display="none";
 
   }
 
   function myFunction1()
   
   {
-    var x = document.getElementById("div1");
-    var y = document.getElementById("div2");
+    let x = document.getElementById("div1");
+    let y = document.getElementById("div2");
+    let z = document.getElementById("div3");
 
   
     x.style.display="block";
     y.style.display="none";
+    z.style.display="none";
   }
+
+  function filterById(jsonObject, id) 
+  {return jsonObject.filter(function(jsonObject)
+     {return (jsonObject['id'] == id);
+    })
+     [0];
+    }
 
 
 
@@ -148,7 +154,30 @@ function myFunction()
 
    function editdata(){
 
-    
+    let rowno = document.getElementById('data-edit').value;
+    let fname = document.getElementById('text-edit').value;
+    let mail = document.getElementById('email-edit').value;
+    let pass = document.getElementById('pw-edit').value;
+
+    axios.patch(`http://localhost:3000/users/${rowno}`,
+    {
+      "name":fname,
+      "email": mail,
+      "password":pass
+    },
+    "Content-Type : application/json"
+    )
+    .then((res) => {
+      console.log(res.data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+    alert("update successfull");
+
    }
    
+   
+
+  
 
