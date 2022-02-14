@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Register-form</title>
+</head>
+<body>
+    
+    <header>
+        <button class="btn" onclick="myFunction()">SIGN IN</button>
+        <button class="btn" onclick="myFunction1()">SIGN UP</button>
+        
+    </header>
+      
+    <div id="div1" class="register" style="display: none;">
+        <form  class="form-register">
+            <h1>SIGN UP</h1>
+            
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Username" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <label for="pw">Password</label><br>
+            <input type="password" id="password" placeholder="password" required><br>
+            
+            <input id="registerd-btn" type="submit" value="Register" onclick="check()">
+        </form>
+        
+    </div>
+
+    <div id="div2" class="login" >
+
+        <form  class="form-login">
+            <h1>SIGN IN</h1>
+            <label for="email">Email</label><br>
+            <input type="email" id="mail" placeholder="Email" required><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="pw" placeholder="password" required><br>
+            <div id="remember">
+                <input type="checkbox" value="rememberme" id="rememberme">
+                <label>Remember Me</label>
+            </div>
+            <input id="login-btn" type="submit" value="Login" onclick="compare()">
+            <input id="data-btn" type="submit" value="Show Data" onclick="requestt()"> 
+            <!-- <button id="showdata" onclick="requestt()">
+                show data
+            </button>-->
+        </form>
+     </div>
+
+    
+
+     <div id="div3" style="display:none;">
+
+        <div class="items">
+          <div class="edit">
+            
+          </div>
+          <button onclick="editdata()">
+            edit
+        </button>
+          <div class="save">
+              
+          </div>
+          <button onclick="savedata()">
+            save
+        </button>
+        </div>
+        <table id="my-table">
+            <thead>
+                <tr>
+                    <th id="name">Name</th>
+                    <th id="mail">Email</th>
+                    <th id="pw">Password</th>
+                    <th id="num">Id</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="table-content">
+    
+            </tbody>
+        </table>
+
+
+<script src="main.js">
+
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js" integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+</body>
+</html>

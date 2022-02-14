@@ -1,0 +1,89 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "name": "jake",
+      "email": "jake@gmail.com",
+      "password": "jake123",
+      "id": 1
+    },
+    {
+      "name": "pete",
+      "email": "pete@gmail.com",
+      "password": "pete123",
+      "id": 2
+    },
+    {
+      "name": "amy",
+      "email": "amy@gmail.com",
+      "password": "amy123",
+      "id": 3
+    },
+    {
+      "name": "diaz",
+      "email": "diaz@gmail.com",
+      "password": "diaz123",
+      "id": 4
+    },
+    {
+      "name": "gina",
+      "email": "gina@gmail.com",
+      "password": "gina123",
+      "id": 5
+    },
+    {
+      "name": "holt",
+      "email": "holt@gmail.com",
+      "password": "holt123",
+      "id": 6
+    },
+    {
+      "name": "chuck",
+      "email": "chuck@gmail.com",
+      "password": "chuck123",
+      "id": 7
+    },
+    {
+      "name": "phil",
+      "email": "phil@gmail.com",
+      "password": "phil",
+      "id": 8
+    },
+    {
+      "name": "charles",
+      "email": "charles@gmail.com",
+      "password": "charles123",
+      "id": 9
+    },
+    {
+      "name": "john",
+      "email": "john@gmail.com",
+      "password": "john123",
+      "id": 10
+    },
+    {
+      "name": "ross",
+      "email": "ross@gmail.com",
+      "password": "ross123",
+      "id": 11
+    },
+    {
+      "name": "scully",
+      "email": "scully@gmail.com",
+      "password": "scully123",
+      "id": 12
+    },
+    {
+      "name": "smith",
+      "email": "smith@gmail.com",
+      "password": "smith123",
+      "id": 13
+    }
+  ]
+}
