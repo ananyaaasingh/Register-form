@@ -163,3 +163,39 @@ header{
    
 }
 
+
+#div3 .head input[type = "text"]{
+    background-color: #434a52;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#div3 .head input[type = "number"]{
+    background-color: #434a52;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#div3 .head input[type = "email"]{
+    background-color: #434a52;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#div3 .head input[type = "password"]{
+    background-color: #434a52;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#div3 .head input[type = "submit"]{
+    background-color: #56677a;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    width: 20%;
+}
